@@ -385,7 +385,9 @@ function balckjackStand(){
                     document.getElementById("blackjack-draws").textContent = parseInt(document.querySelector("#blackjack-draws").firstChild.nodeValue) + 1;
                     alert('Please press deal for the new game!')
                 }
-            }
+            };
+
+            alert('change in github');
             
         
            
