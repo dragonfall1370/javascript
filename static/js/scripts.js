@@ -377,9 +377,17 @@ function balckjackStand(){
             
                 
             if(dealer_score >= score && dealer_score >=18){
-                break
+                break;
+                if (dealer_score > score){
+                    document.getElementById("blackjack-wins").textContent = parseInt(document.querySelector("#blackjack-wins").firstChild.nodeValue) + 1;
+                    alert('Please press deal for the new game!')
+                } else if(dealer_score = score){
+                    document.getElementById("blackjack-draws").textContent = parseInt(document.querySelector("#blackjack-draws").firstChild.nodeValue) + 1;
+                    alert('Please press deal for the new game!')
+                }
             }
             
+        
            
        
 
